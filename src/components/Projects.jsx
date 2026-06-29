@@ -3,46 +3,57 @@ import { projects } from "../data/projects"
 function Projects() {
   return (
     <section id="projects" className="mx-auto max-w-6xl px-6 py-24">
-      <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-400">
+      <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
         Projects
       </p>
 
-      <h2 className="text-4xl font-bold">
-        Selected work I have built.
-      </h2>
+      <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+        <h2 className="max-w-2xl text-4xl font-bold md:text-5xl">
+          Selected work that shows what I can build.
+        </h2>
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <p className="max-w-md text-slate-400">
+          Real projects built with modern frontend, backend, AI, automation,
+          and deployment tools.
+        </p>
+      </div>
+
+      <div className="mt-12 grid gap-6 md:grid-cols-2">
         {projects.map((project) => (
           <article
-            key={project.title}
-            className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 transition hover:border-cyan-400"
+            key={project.id}
+            className="group rounded-3xl border border-slate-800 bg-slate-900/60 p-6 transition duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:bg-slate-900"
           >
-            <h3 className="text-2xl font-bold text-white">
-              {project.title}
-            </h3>
+            <div className="mb-6 flex items-center justify-between gap-4">
+              <h3 className="text-2xl font-bold text-white">
+                {project.title}
+              </h3>
 
-            <p className="mt-4 text-slate-400">
-              {project.description}
-            </p>
+              <span className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cyan-300">
+                {project.status}
+              </span>
+            </div>
 
-            <div className="mt-5 flex flex-wrap gap-2">
+            <p className="text-slate-400">{project.description}</p>
+
+            <div className="mt-6 flex flex-wrap gap-2">
               {project.tech.map((item) => (
                 <span
                   key={item}
-                  className="rounded-full bg-slate-800 px-3 py-1 text-sm text-cyan-300"
+                  className="rounded-full bg-slate-800 px-3 py-1 text-sm text-slate-300 transition group-hover:text-cyan-300"
                 >
                   {item}
                 </span>
               ))}
             </div>
 
-            <div className="mt-6 flex gap-4">
+            <div className="mt-8 flex flex-wrap gap-3">
               {project.demo && (
                 <a
                   href={project.demo}
                   target="_blank"
                   rel="noreferrer"
-                  className="font-semibold text-cyan-400 hover:text-cyan-300"
+                  className="rounded-xl bg-cyan-500 px-4 py-2 font-semibold text-slate-950 transition hover:bg-cyan-400"
                 >
                   Live Demo
                 </a>
@@ -52,7 +63,7 @@ function Projects() {
                 href={project.github}
                 target="_blank"
                 rel="noreferrer"
-                className="font-semibold text-slate-300 hover:text-white"
+                className="rounded-xl border border-slate-700 px-4 py-2 font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-300"
               >
                 GitHub
               </a>

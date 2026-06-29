@@ -1,33 +1,48 @@
 export const projects = [
   {
+    id: 1,
     title: "AND Real Estate",
+    status: "Live",
+    featured: true,
     description:
-      "A modern real estate website with property listings, admin dashboard, image uploads, and lead inquiry features.",
-    tech: ["React", "Tailwind", "FastAPI", "PostgreSQL", "Cloudinary"],
+      "A modern full-stack real estate platform with property listings, admin dashboard, image uploads, and lead management.",
+    tech: ["React", "Tailwind", "FastAPI", "PostgreSQL"],
     github: "https://github.com/jorige3/and-real-estate",
     demo: "https://and-real-estates.onrender.com/",
   },
+
   {
+    id: 2,
     title: "Personal AI Engineer",
+    status: "Active",
+    featured: true,
     description:
-      "An AI-powered developer assistant project focused on code, automation, and personal productivity workflows.",
-    tech: ["React", "Python", "FastAPI", "Docker", "AI"],
+      "AI-powered personal developer assistant for coding, automation, and productivity.",
+    tech: ["React", "Python", "FastAPI", "Docker"],
     github: "https://github.com/jorige3/personal-ai-engineer",
     demo: "",
   },
+
   {
+    id: 3,
     title: "ML Time Series Ranking Engine",
+    status: "Completed",
+    featured: false,
     description:
-      "A machine learning and analytics system with API, Docker services, reports, and ranking workflows.",
-    tech: ["Python", "FastAPI", "Docker", "ML", "GitHub Actions"],
+      "Machine learning analytics platform with Docker services, APIs, and reporting.",
+    tech: ["Python", "FastAPI", "Docker"],
     github: "https://github.com/jorige3/ml-time-series-ranking-engine",
     demo: "",
   },
+
   {
+    id: 4,
     title: "Project Guardian Pro",
+    status: "Completed",
+    featured: false,
     description:
-      "A Python code audit tool that checks project structure, security issues, health score, and quality signals.",
-    tech: ["Python", "CLI", "Ruff", "Mypy", "CI"],
+      "CLI tool for project health analysis, security checks, and code quality.",
+    tech: ["Python", "CLI", "GitHub Actions"],
     github: "https://github.com/jorige3/project_guardian_pro",
     demo: "",
   },
