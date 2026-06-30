@@ -12,14 +12,14 @@ function Hero() {
   return (
     <section
       id="home"
-      className="mx-auto flex min-h-screen max-w-6xl items-center px-6 pt-24"
+      className="mx-auto flex min-h-screen max-w-6xl items-center px-6 pt-28 md:pt-24"
     >
       <div className="max-w-4xl">
         <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
           Hello, I&apos;m
         </p>
 
-        <h1 className="text-5xl font-extrabold leading-tight tracking-tight md:text-7xl">
+        <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight md:text-7xl">
           Kishore Kumar J
         </h1>
 
