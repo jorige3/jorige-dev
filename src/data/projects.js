@@ -1,7 +1,10 @@
+import andRealEstate from "../assets/projects/and-real-estate.png";
+
 export const projects = [
   {
     id: 1,
     title: "AND Real Estate",
+    image: andRealEstate,
     status: "Live",
     featured: true,
     description:
