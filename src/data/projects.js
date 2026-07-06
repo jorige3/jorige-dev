@@ -1,12 +1,13 @@
 import andRealEstate from "../assets/projects/and-real-estate.png";
 import personalAIEngineer from "../assets/projects/personal-ai-engineer.png";
+import mlTimeSeriesImage from "../assets/projects/ml-time-series-ranking-engine.png";
 
 export const projects = [
   {
     id: 1,
     title: "AND Real Estate",
     image: andRealEstate,
-    status: "Live",
+    status: "LIVE",
     featured: true,
     description:
       "A modern full-stack real estate platform with property listings, admin dashboard, image uploads, and lead management.",
@@ -19,8 +20,8 @@ export const projects = [
     id: 2,
     title: "Personal AI Engineer",
     image: personalAIEngineer,
-    status: "Active",
-    featured: true,
+    status: "ACTIVE",
+    featured: false,
     description:
       "AI-powered personal developer assistant for coding, automation, and productivity.",
     tech: ["React", "Python", "FastAPI", "Docker"],
@@ -31,24 +32,13 @@ export const projects = [
   {
     id: 3,
     title: "ML Time Series Ranking Engine",
-    status: "Completed",
+    image: mlTimeSeriesImage,
+    status: "LIVE",
     featured: false,
     description:
-      "Machine learning analytics platform with Docker services, APIs, and reporting.",
-    tech: ["Python", "FastAPI", "Docker"],
+      "Machine learning-powered prediction engine with FastAPI, Docker, analytics APIs, and automated daily prediction workflows.",
+    tech: ["Python", "FastAPI", "Docker", "Machine Learning"],
     github: "https://github.com/jorige3/ml-time-series-ranking-engine",
-    demo: "",
+    demo: "https://ml-time-series-ranking-engine.onrender.com/docs",
   },
-
-  {
-    id: 4,
-    title: "Project Guardian Pro",
-    status: "Completed",
-    featured: false,
-    description:
-      "CLI tool for project health analysis, security checks, and code quality.",
-    tech: ["Python", "CLI", "GitHub Actions"],
-    github: "https://github.com/jorige3/project_guardian_pro",
-    demo: "",
-  },
-]
+];

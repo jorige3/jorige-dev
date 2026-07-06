@@ -1,4 +1,4 @@
-import { projects } from "../data/projects"
+import { projects } from "../data/projects";
 
 function ProjectCard({ project, featured = false }) {
   return (
@@ -12,8 +12,9 @@ function ProjectCard({ project, featured = false }) {
           src={project.image}
           alt={project.title}
           className={`mb-6 w-full rounded-2xl shadow-lg transition duration-500 group-hover:scale-[1.02] ${
-            featured ? "h-72 md:mb-0 object-contain bg-white" : "h-56 object-cover"
-
+            featured
+              ? "h-72 md:mb-0 object-contain bg-white"
+              : "h-56 object-cover"
           }`}
         />
       )}
@@ -65,12 +66,12 @@ function ProjectCard({ project, featured = false }) {
         </div>
       </div>
     </article>
-  )
+  );
 }
 
 function Projects() {
-  const featuredProject = projects.find((project) => project.featured)
-  const otherProjects = projects.filter((project) => !project.featured)
+  const featuredProject = projects.find((project) => project.featured);
+  const otherProjects = projects.filter((project) => !project.featured);
 
   return (
     <section id="projects" className="mx-auto max-w-6xl px-6 py-24">
@@ -94,6 +95,7 @@ function Projects() {
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
             Featured Project
           </p>
+
           <ProjectCard project={featuredProject} featured />
         </div>
       )}
@@ -104,7 +106,7 @@ function Projects() {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default Projects 
+export default Projects;
