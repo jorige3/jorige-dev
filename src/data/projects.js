@@ -1,4 +1,5 @@
 import andRealEstate from "../assets/projects/and-real-estate.png";
+import personalAIEngineer from "../assets/projects/personal-ai-engineer.png";
 
 export const projects = [
   {
@@ -17,6 +18,7 @@ export const projects = [
   {
     id: 2,
     title: "Personal AI Engineer",
+    image: personalAIEngineer,
     status: "Active",
     featured: true,
     description:
