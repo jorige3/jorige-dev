@@ -34,7 +34,7 @@ function Contact() {
           href="https://www.upwork.com/freelancers/~019b73eef6a25caa91"
           target="_blank"
           rel="noreferrer"
-        
+          className="rounded-xl border border-slate-700 px-6 py-3 font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-300"
         >
           Upwork
         </a>
