@@ -33,10 +33,14 @@ function Navbar() {
           ))}
         </div>
 
-        {/* Mobile Button */}
+        {/* Mobile Menu Button */}
         <button
+          type="button"
           className="text-3xl text-white md:hidden"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setIsOpen((current) => !current)}
+          aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={isOpen}
+          aria-controls="mobile-navigation"
         >
           ☰
         </button>
@@ -44,7 +48,10 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="border-t border-slate-800 bg-slate-950 md:hidden">
+        <div
+          id="mobile-navigation"
+          className="border-t border-slate-800 bg-slate-950 md:hidden"
+        >
           {links.map((link) => (
             <a
               key={link.name}
