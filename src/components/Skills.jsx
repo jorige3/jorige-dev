@@ -16,7 +16,7 @@ const skills = [
 function Skills() {
   return (
     <section id="skills" className="mx-auto max-w-6xl px-6 py-24">
-      <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-400">
+      <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-600 dark:text-cyan-400 transition-colors duration-300">
         Skills
       </p>
 
@@ -28,7 +28,7 @@ function Skills() {
         {skills.map((skill) => (
           <div
             key={skill}
-            className="rounded-2xl border border-slate-800 bg-slate-900/60 px-5 py-4 text-slate-200 transition hover:border-cyan-400"
+            className="rounded-2xl border border-slate-200 bg-white text-slate-700 hover:border-cyan-600 dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-200 dark:hover:border-cyan-400 px-5 py-4 transition-all duration-300"
           >
             {skill}
           </div>

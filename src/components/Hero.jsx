@@ -15,7 +15,7 @@ function Hero() {
       className="mx-auto flex min-h-screen max-w-6xl items-center px-6 pt-28 md:pt-24"
     >
       <div className="max-w-4xl">
-        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
+        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-600 dark:text-cyan-400 transition-colors duration-300">
           Hello, I&apos;m
         </p>
 
@@ -23,12 +23,12 @@ function Hero() {
           Kishore Kumar J
         </h1>
 
-        <div className="mt-6 space-y-2 text-2xl font-semibold text-slate-200 md:text-3xl">
+        <div className="mt-6 space-y-2 text-2xl font-semibold text-slate-700 dark:text-slate-200 transition-colors duration-300 md:text-3xl">
           <p>Full-Stack Developer</p>
-          <p className="text-cyan-400">AI & Automation Builder</p>
+          <p className="text-cyan-600 dark:text-cyan-400 transition-colors duration-300">AI & Automation Builder</p>
         </div>
 
-        <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-400">
+        <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-400 transition-colors duration-300">
           Building practical AI tools, automation systems, and modern web
           applications that solve real-world problems.
         </p>
@@ -36,14 +36,14 @@ function Hero() {
         <div className="mt-10 flex flex-wrap gap-4">
           <a
             href="#projects"
-            className="rounded-xl bg-cyan-500 px-6 py-3 font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 transition hover:-translate-y-1 hover:bg-cyan-400"
+            className="inline-flex items-center justify-center rounded-xl bg-cyan-600 px-6 py-3 font-semibold text-white shadow-lg shadow-cyan-600/10 dark:bg-cyan-500 dark:text-slate-950 dark:shadow-cyan-500/20 transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-500 dark:hover:bg-cyan-400"
           >
             View Projects
           </a>
 
           <a
             href="#contact"
-            className="rounded-xl border border-slate-700 px-6 py-3 font-semibold text-slate-200 transition hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-300"
+            className="inline-flex items-center justify-center rounded-xl border border-slate-300 px-6 py-3 font-semibold text-slate-700 dark:border-slate-700 dark:text-slate-200 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-600 hover:text-cyan-600 dark:hover:border-cyan-400 dark:hover:text-cyan-300"
           >
             Contact Me
           </a>
@@ -53,7 +53,7 @@ function Hero() {
           {techStack.map((tech) => (
             <span
               key={tech}
-              className="rounded-full border border-slate-800 bg-slate-900/70 px-4 py-2 text-sm text-slate-300"
+              className="rounded-full border border-slate-200 bg-white/70 dark:border-slate-800 dark:bg-slate-900/70 px-4 py-2 text-sm text-slate-600 dark:text-slate-300 transition-colors duration-300"
             >
               {tech}
             </span>
