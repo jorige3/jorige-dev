@@ -1,14 +1,28 @@
 import andRealEstate from "../assets/projects/and-real-estate.png";
 import personalAIEngineer from "../assets/projects/personal-ai-engineer.png";
 import mlTimeSeriesImage from "../assets/projects/ml-time-series-ranking-engine.png";
+import projectGuardian from "../assets/projects/project-guardian.png";
 
 export const projects = [
   {
     id: 1,
+    title: "Project Guardian",
+    image: projectGuardian,
+    status: "COMPLETE",
+    featured: true,
+    description:
+      "A modular Python static analysis engine that audits code quality, dependency constraints, security risks, and machine-learning architecture patterns.",
+    tech: ["Python", "AST", "Pytest", "GitHub Actions"],
+    github: "https://github.com/jorige3/project_guardian",
+    demo: "",
+  },
+
+  {
+    id: 2,
     title: "AND Real Estate",
     image: andRealEstate,
     status: "LIVE",
-    featured: true,
+    featured: false,
     description:
       "A modern full-stack real estate platform with property listings, admin dashboard, image uploads, and lead management.",
     tech: ["React", "Tailwind", "FastAPI", "PostgreSQL"],
@@ -17,7 +31,7 @@ export const projects = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "Personal AI Engineer",
     image: personalAIEngineer,
     status: "ACTIVE",
@@ -30,7 +44,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "ML Time Series Ranking Engine",
     image: mlTimeSeriesImage,
     status: "LIVE",
